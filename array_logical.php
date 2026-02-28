@@ -1,7 +1,7 @@
 <?php
 /* Функция делает логические операции с массивами. Может объединять массивы или находить их пересечение (через eval).
-    Для Arr1() && Arr2()  ->     array_merge(Arr1,Arr2)
-    Для Arr1() || Arr2()  ->     array_intersect(Arr1,Arr2)
+    Для Arr1() || Arr2()  ->     array_merge(Arr1,Arr2)
+    Для Arr1() && Arr2()  ->     array_intersect(Arr1,Arr2)
 И т.д.
 */
 // Процедурная реализация (без ООП)
@@ -122,3 +122,4 @@ function eval_logical_Arr_operations($bool_string, $message_to_user, $a = null){
         return array(-1, $message_to_user);
     }
 }
+
