@@ -74,8 +74,8 @@ return strval($parenth);
 
 // Функция преобразовывает строку, содержащую логические операции для массивов, в строку с соответствующими массивными функциями
 function change_logical_operator_to_F($parenth, $operator, $i){
-/* Для Arr1() && Arr2() :     array_merge(Arr1,Arr2)
-   Для Arr1() || Arr2() :     array_intersect(Arr1,Arr2)
+/* Для Arr1() || Arr2() :     array_merge(Arr1,Arr2)
+   Для Arr1() && Arr2() :     array_intersect(Arr1,Arr2)
 */
 
 $i_max = 20;
@@ -122,4 +122,5 @@ function eval_logical_Arr_operations($bool_string, $message_to_user, $a = null){
         return array(-1, $message_to_user);
     }
 }
+
 
